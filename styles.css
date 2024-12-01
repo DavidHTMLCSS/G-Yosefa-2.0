@@ -1,11 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
 
+h2, h3, p{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+}
+
 button:hover{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
     cursor: pointer;
 }
 
@@ -13,9 +24,13 @@ body{
     background-color: #C5C5C5;
 }
 
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
 .header{
     background-color: #02BDF4;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 8lvh;
@@ -38,7 +53,7 @@ body{
     color: white;
     width: auto;
     top: 50%;
-    left: 15%;
+    left: 10%;
     font-size: calc(35px + .2vw);
 }
 
@@ -79,41 +94,167 @@ body{
     height: 35px;
 }
 
-.content_body{
-    position: absolute;
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
+
+.content_body {
+    position: relative;
     background-color: white;
-    transform: translate(-50%, -50%);
-    top: 55%;
-    left: 50%;
     width: 80%;
-    height: 100%;
+    height: calc(300vh); /* Высота на 3 экрана */
+    overflow: hidden;
+    margin: 0 auto;
 }
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+
 
 .box_1{
-    position: relative;
-    background-image: url("images/Content/home_Yosefa.png");
+    background-color: #02BDF4;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 20px 20px 50px grey;
+}
 
-  /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
+.Yosefa-img{
+    position: absolute;
+    width: 50%;
+    left: 800px;
+    bottom: 0;
+    z-index: 999;
+}
+
+.main-text{
+    background-color: rgba(255, 255, 255, 0.562);
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    width: 48%;
+    height: auto;
+    z-index: 999;
+}
+
+.main-text h2, p{
+    margin: 5%;
+}
+
+.main-text h1{
+    font-size: calc(35px + .2vw);
+    margin: 5%;
+    font-family: "Great Vibes", cursive;
+}
+
+.contact_me_button_main{
+    position: relative;
+    font-size: calc(15px + .2vw);
+    background-color: orangered;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    border-style: none;
+    margin-top: 2%;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.contact_me_button_main:hover{
+    background-color: orange;
+}
+
+.bg-home-images{
+    position: relative;
+    width: 100%;
+    height: 100lvh;
+    background-image: url(images/Content/main-slider/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    box-shadow: 20px 20px 50px;
+    background-position: center;
 }
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
 
 .box_2{
     position: relative;
     width: 100%;
-    height: 100vh;
-    background-color: yellow;
+    height: 110vh;
+    background-color: yellow;   
     box-shadow: 20px 20px 50px grey;
+}
+
+.box_2 h2{
+    position: relative;
+    font-size: 40px;
+    top: 2%;
+    text-align: center;
+}
+
+.box_2 h3{
+    position: relative;
+    font-size: 25px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+
+.colum-diploms{
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colum-gomeo{
+    position: relative;
+    margin-left: 3%;
+    margin-right: 2%;
+    width: 15%;
+}
+
+.colum-couch{
+    position: relative;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 20%;
+}
+
+.image_diplom{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 150px;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.contact_me_button_diploms{
+    position: absolute;
+    font-size: calc(15px + .2vw);
+    background-color: orangered;
+    transform: translate(-50%, -50%);
+    bottom: 5%;
+    left: 50%;
+    border-style: none;
+    margin-top: 2%;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
 }
 
 .box_3{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: green;
+    background-color: #FFB2C6;
     box-shadow: 20px 20px 50px grey;
 }
